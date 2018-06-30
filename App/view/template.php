@@ -13,7 +13,8 @@ and open the template in the editor.
         <p>Vamos imaginar que aqui temos a área principal de trabalho, dentro do site, onde colocaremos conteúdos dinâmicos:
         <hr>            
         <?php
-        $this->content();
+        $this->content();     
+        //$this->InserirProduto() //
         ?>
         <hr>
     </body>

@@ -22,7 +22,7 @@ class indexController {
     
     //put your code here
     public function index() {
-        $this->render('index.php','template.php');
+        $this->render('index.php','template.php');        
     }
     public function lista() {
         $modelProdutos = new \App\model\produtos();
@@ -45,7 +45,7 @@ class indexController {
     }
     
     public function render($view, $template) {
-        $this->view = 'App//view//www//' . $view;
+        $this->view = 'App//view//index//' . $view;
         include 'App//view//' . $template;
     }
     

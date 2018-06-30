@@ -38,7 +38,22 @@ class produtos {
         }
     }
     
-       
+        public function InserirProduto() {
+        try {
+           $PDO = new \PDO("mysql:host=localhost;dbname=projeto","root");
+        } catch (\PDOException $exc) {
+            echo "erro na conexão<br>";
+            echo $exc->getMessage();
+            return;
+        }
+        
+        for ($num=3; $num<=1000; $num++){
+        $sql = "INSERT INTO `produtos` (`idProduto`, `nome`, `descricao`) VALUES ('{$num}', 'Produto {$num}', 'Teste {$num}');";
+        $retorno = $PDO->prepare($sql);
+        $retorno->execute();
+        }
+        
+    }   
     
     public function LerDetalheProduto($idProduto) {
         try {
