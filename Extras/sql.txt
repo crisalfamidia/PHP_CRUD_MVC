@@ -1,0 +1,6 @@
+INSERT INTO `produtos` (`idProduto`, `nome`, `descricao`) VALUES ('1', 'Produto 01', 'Teste 01');
+INSERT INTO `produtos` (`idProduto`, `nome`, `descricao`) VALUES ('2', 'Produto 02', 'Teste 02');
+INSERT INTO `produtos` (`idProduto`, `nome`, `descricao`) VALUES ('3', 'Produto 03', 'Teste 03');
+
+
+DELETE FROM `produtos` WHERE idProduto = 1;
